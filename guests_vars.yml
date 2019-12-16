@@ -1,0 +1,14 @@
+---
+guests:
+    - name: ksingh9_VM2
+      mem: 2048
+      vcpu: 2
+      disk: 12G
+      network1: "{{ networks['internet']['network_name'] }}"
+      network2: "{{ networks['l2']['network_name'] }}"
+    - name: ksingh9_VM3
+      mem: 2048
+      vcpu: 2
+      disk: 12G
+      network1: "{{ networks['internet']['network_name'] }}"
+      network2: "{{ networks['l2']['network_name'] }}"

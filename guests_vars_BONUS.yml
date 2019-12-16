@@ -1,0 +1,20 @@
+---
+guests:
+    - name: VM1
+      mem: 2048
+      vcpu: 2
+      disk: 12G
+      network1: "{{ networks['internet']['network_name'] }}"
+      network2: "{{ networks['l2']['network_name'] }}"
+      network3: "{{ networks['l3']['network_name'] }}"
+    - name: VM2
+      mem: 2048
+      vcpu: 2
+      disk: 12G
+      network1: "{{ networks['internet']['network_name'] }}"
+    - name: VM3
+      mem: 2048
+      vcpu: 2
+      disk: 12G
+      network1: "{{ networks['l2']['network_name'] }}"
+      network2: "{{ networks['l3']['network_name'] }}"

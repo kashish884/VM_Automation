@@ -1,0 +1,23 @@
+---
+networks:
+  internet:
+    network_name: internet
+    bridge_name: q3ovs1
+    bridge_type: nat/dhcp
+    ip_address: 192.168.198.1/24
+    dhcp_range: 192.168.198.2,192.168.198.254,12h
+    subnet_address: 192.168.198.0/24
+  l2:
+    network_name: l2
+    bridge_name: q3ovs2
+    bridge_type: bridge
+  l3:
+    network_name: l3
+    bridge_name: q3ovs3
+    bridge_type: routed
+    ip_address: 192.168.197.1/24
+  other:
+    network_name: other
+    bridge_name: q3ovs4
+    bridge_type: routed
+    ip_address: 192.168.196.1/24
